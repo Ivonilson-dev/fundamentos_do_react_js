@@ -5,10 +5,16 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  let pessoa = {nome: 'IVO', idade: 45, sexo: 'M'}
+  let {nome, idade} = pessoa
 
   return (
     <>
-      <h1>Olá mundo...</h1>
+    <div>
+        <span>Olá {nome}</span>
+        <br/>
+        <span>Sua idade é {idade}</span>
+    </div> 
     </>
   )
 }
